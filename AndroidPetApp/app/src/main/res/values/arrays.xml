@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Display labels for the filter spinners. Parallel value arrays (the
+         lowercase filter tokens) live in MainActivity. Order must stay in sync. -->
+    <string-array name="size_filter_labels">
+        <item>All Sizes</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="temperament_filter_labels">
+        <item>All Temperaments</item>
+        <item>Friendly</item>
+        <item>Calm</item>
+        <item>Playful</item>
+        <item>Gentle</item>
+        <item>Aggressive</item>
+    </string-array>
+
+    <string-array name="availability_filter_labels">
+        <item>All Status</item>
+        <item>Available</item>
+        <item>Pending</item>
+        <item>Adopted</item>
+    </string-array>
+
+    <!-- Form spinners: first item is a "Select…" placeholder that maps to "".
+         availability has no placeholder (defaults to Available). -->
+    <string-array name="form_sex_labels">
+        <item>Select Sex</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="form_size_labels">
+        <item>Select Size</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="form_temperament_labels">
+        <item>Select Temperament</item>
+        <item>Friendly</item>
+        <item>Calm</item>
+        <item>Playful</item>
+        <item>Gentle</item>
+        <item>Aggressive</item>
+    </string-array>
+
+    <string-array name="form_availability_labels">
+        <item>Available</item>
+        <item>Pending</item>
+        <item>Adopted</item>
+    </string-array>
+</resources>

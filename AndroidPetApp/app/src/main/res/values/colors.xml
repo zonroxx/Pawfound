@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Palette extracted verbatim from the Angular frontend (neo-brutalist pastel) -->
+    <color name="brand_orange">#FCAA4C</color>   <!-- primary / accent / CTA -->
+    <color name="brand_cream">#FFF2BE</color>    <!-- card + panel surface -->
+    <color name="brand_purple">#E5DBFF</color>   <!-- breed badge / Sex tile -->
+    <color name="brand_green">#D1F0DD</color>    <!-- Available / Mood tile -->
+    <color name="brand_peach">#F0C6AF</color>    <!-- image bg / Age tile -->
+
+    <color name="page_background">#FFFFFF</color>
+    <color name="text_secondary">#99000000</color> <!-- black @ 60% -->
+
+    <!-- Per-status availability badge colors -->
+    <color name="status_available">#D1F0DD</color>
+    <color name="status_pending">#FFF2BE</color>
+    <color name="status_adopted">#F0C6AF</color>
+
+    <color name="danger">#D32F2F</color>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/brand_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Pet Details"
+        app:titleTextAppearance="@style/TextAppearance.Brand.Toolbar" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
+
+            <ImageView
+                android:id="@+id/imagePet"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@color/brand_peach"
+                android:contentDescription="@string/pet_photo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_pet_placeholder" />
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/fredoka"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:text="Cooper" />
+
+            <TextView
+                android:id="@+id/textSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"
+                tools:text="Golden Retriever • Available" />
+
+            <!-- Sections: a title + a container filled programmatically -->
+            <TextView
+                style="@style/DetailSectionTitle"
+                android:text="Basics" />
+
+            <LinearLayout
+                android:id="@+id/sectionBasics"
+                style="@style/DetailSection" />
+
+            <TextView
+                style="@style/DetailSectionTitle"
+                android:text="Physical" />
+
+            <LinearLayout
+                android:id="@+id/sectionPhysical"
+                style="@style/DetailSection" />
+
+            <TextView
+                style="@style/DetailSectionTitle"
+                android:text="Health" />
+
+            <LinearLayout
+                android:id="@+id/sectionHealth"
+                style="@style/DetailSection" />
+
+            <TextView
+                style="@style/DetailSectionTitle"
+                android:text="Adoption &amp; Contact" />
+
+            <LinearLayout
+                android:id="@+id/sectionAdoption"
+                style="@style/DetailSection" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonContact"
+                style="@style/Brand.Button.Filled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Contact Shelter"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/buttonActions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonEdit"
+                    style="@style/Brand.Button.Outlined"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:text="Edit" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonDelete"
+                    style="@style/Brand.Button.Danger"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:text="Delete" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

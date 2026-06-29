@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Pet App</string>
+    <string name="pet_photo">Pet photo</string>
+    <string name="retry">Retry</string>
+</resources>

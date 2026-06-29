@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- The brand identity is intentionally the same in dark mode (pastel on
+         light) so it always matches the Angular frontend. -->
+    <style name="Base.Theme.AndroidPetApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_orange</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryContainer">@color/brand_cream</item>
+        <item name="colorOnPrimaryContainer">@color/black</item>
+
+        <item name="colorSecondary">@color/brand_purple</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryContainer">@color/brand_purple</item>
+        <item name="colorOnSecondaryContainer">@color/black</item>
+
+        <item name="android:colorBackground">@color/page_background</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorOnBackground">@color/black</item>
+        <item name="colorSurfaceVariant">@color/brand_cream</item>
+        <item name="colorOnSurfaceVariant">@color/black</item>
+        <item name="colorError">@color/danger</item>
+
+        <item name="colorControlActivated">@color/brand_orange</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.AndroidPetApp" parent="Base.Theme.AndroidPetApp" />
+</resources>

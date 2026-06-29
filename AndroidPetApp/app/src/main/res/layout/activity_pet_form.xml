@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/formRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/brand_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Add Pet"
+        app:titleTextAppearance="@style/TextAppearance.Brand.Toolbar" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Breed">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputBreed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Photo URL">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputPhotoUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textUri"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Age (years)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView style="@style/FormLabel" android:text="Sex" />
+
+            <Spinner
+                android:id="@+id/spinnerSex"
+                style="@style/FormSpinner" />
+
+            <TextView style="@style/FormLabel" android:text="Size" />
+
+            <Spinner
+                android:id="@+id/spinnerSize"
+                style="@style/FormSpinner" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Weight (kg)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Adoption Fee (₱)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Description">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:minLines="2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView style="@style/FormSectionTitle" android:text="Health &amp; Medical" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Health Status">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputHealthStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Vaccination Status">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputVaccinationStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchDewormed"
+                style="@style/FormSwitch"
+                android:text="Dewormed" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchNeutered"
+                style="@style/FormSwitch"
+                android:text="Neutered / Spayed" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Medical Notes">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputMedicalNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:minLines="2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView style="@style/FormSectionTitle" android:text="Behavior &amp; Training" />
+
+            <TextView style="@style/FormLabel" android:text="Temperament" />
+
+            <Spinner
+                android:id="@+id/spinnerTemperament"
+                style="@style/FormSpinner" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchHouseTrained"
+                style="@style/FormSwitch"
+                android:text="House Trained" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Training Level">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputTrainingLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView style="@style/FormSectionTitle" android:text="Adoption &amp; Contact" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Location">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView style="@style/FormLabel" android:text="Status" />
+
+            <Spinner
+                android:id="@+id/spinnerAvailability"
+                style="@style/FormSpinner" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Intake Date (YYYY-MM-DD)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputIntakeDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:inputType="none"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormField"
+                android:hint="Contact Info (email)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputContactInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonSave"
+                style="@style/Brand.Button.Filled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Save" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonCancel"
+                style="@style/Brand.Button.Outlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cancel" />
+
+            <ProgressBar
+                android:id="@+id/progressSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

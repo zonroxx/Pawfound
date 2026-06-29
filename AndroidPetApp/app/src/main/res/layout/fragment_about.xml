@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fredoka"
+            android:text="About Pawfound"
+            android:textColor="@color/brand_orange"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="0.01" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="At Pawfound, we believe every animal deserves a loving home. We work with shelters and rescue centers to help connect abandoned, rescued, or surrendered pets with responsible adopters."
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/AboutCard"
+            app:cardBackgroundColor="@color/brand_cream">
+
+            <LinearLayout style="@style/AboutCardContent">
+
+                <LinearLayout style="@style/AboutCardHeader">
+
+                    <ImageView
+                        style="@style/AboutCardIcon"
+                        android:src="@drawable/ic_paw" />
+
+                    <TextView
+                        style="@style/AboutCardTitle"
+                        android:text="Our Mission" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/AboutCardBody"
+                    android:text="To make adoption easier and reduce animal homelessness." />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/AboutCard"
+            app:cardBackgroundColor="@color/brand_green">
+
+            <LinearLayout style="@style/AboutCardContent">
+
+                <LinearLayout style="@style/AboutCardHeader">
+
+                    <ImageView
+                        style="@style/AboutCardIcon"
+                        android:src="@drawable/ic_healing" />
+
+                    <TextView
+                        style="@style/AboutCardTitle"
+                        android:text="Care &amp; Rescue" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/AboutCardBody"
+                    android:text="We rehabilitate, care for, and prepare pets for their new families." />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/AboutCard"
+            app:cardBackgroundColor="@color/brand_purple">
+
+            <LinearLayout style="@style/AboutCardContent">
+
+                <LinearLayout style="@style/AboutCardHeader">
+
+                    <ImageView
+                        style="@style/AboutCardIcon"
+                        android:src="@drawable/ic_home" />
+
+                    <TextView
+                        style="@style/AboutCardTitle"
+                        android:text="Adoption" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/AboutCardBody"
+                    android:text="Every adoption saves two lives: the pet adopted and the one who takes its place." />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>
